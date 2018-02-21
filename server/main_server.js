@@ -175,6 +175,11 @@ function init (app) {
         console.log("[JobTracker] Express server listening on http port 8080");
         RecipeTracker.setupTracker();
         PlayerTracker.setupTracker();
+
+        // Hack to show server start message
+        setTimeout(function() {
+            console.info("The project is now running, you may access it at http://localhost:8080")
+        }, 7000)
     });
 
 }

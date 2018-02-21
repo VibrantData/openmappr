@@ -2,8 +2,17 @@ mappr - a network analysis and visualization platform.
 
 ## How to run via docker
 
-* `docker-compose build` - build the relevant images. Required if any of the source file changes. It takes awhile so be patient
-* `docker-compose up` - start the various services and get the project running. Once the project is running, open http://localhost:8080 and login as `user@mappr.io` with password `woot`
+### Pre-run setup(Do this if you're running for first time, or if there are any changes to the code)
+1) `docker-compose stop` - stops the running services, if any.
+2) `docker-compose build` - build the relevant images. Required if any of the source file changes. It takes awhile so be patient
+
+### Run openmappr
+* `docker-compose up` - start the various services and get the project running. Once the project is running, open http://localhost:8080 and login as `user@mappr.io` with password `woot`.
+
+Note:- This is actually a server running, so don't kill the terminal unless you want to exit.
+
+### Exit openmappr
+* Press 'Ctrl-C' at the terminal to exit.
 
 
 ## Sever-side Organization
