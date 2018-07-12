@@ -8,6 +8,8 @@ services:
       - "elasticsearch"
     ports:
       - "8080:8080"
+    volumes:
+      - "./server:/usr/src/mappr/server"
   athena:
     build: ./athena
     command: ./run_docker_mode.sh
